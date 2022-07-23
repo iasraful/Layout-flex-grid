@@ -1,0 +1,74 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --light-grey: #e0e0e0;
+  --dark-grey: #606060;
+  --red-bg: #da1e5d;
+  background-color: #f5f5f5;
+}
+#nav {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+.layout2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
+}
+.layout3 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
+}
+.layout3 > #card1,
+.layout3 > #card5 {
+  grid-column: 1 / -1;
+}
+.layout3 > #card3 {
+  grid-column: 2/4;
+}
+
+#nav button.selected {
+  background-color: #606060;
+  color: #e0e0e0;
+}
+button {
+  background-color: var(--light-grey);
+  width: 157px;
+  height: 64px;
+  top: 81px;
+  left: 64px;
+  border-radius: 14px;
+  border: none;
+  color: var(--dark-grey);
+  font-weight: 300;
+  font-size: 22px;
+}
+button:active {
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+}
+.card {
+  height: 150px;
+  background: var(--red-bg);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
